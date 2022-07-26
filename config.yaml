@@ -1,0 +1,10 @@
+gtdb:
+  version: 1.0.0
+  trigger_on:
+  - KBaseGenomes.Genome
+  execution:
+    type: wdl
+    wdl: gtdb.wdl
+    input_params:
+      "gtdbtk2re.upa": "{upa}"
+
